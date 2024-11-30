@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jasa Pembuatan Website | Paling Murah Hasil Maksimal</title>
+  <meta name="description" content="Langking Web - Jasa pembuatan website profesional untuk bisnis Anda dengan harga terjangkau.">
+  <meta name="keywords" content="jasa pembuatan website, desain web, SEO, website murah">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="jasa web semarang demak logo.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="jasa web semarang demak logo.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="jasa web semarang demak logo.webp">
+
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+    }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(135deg, #23b2ee, #1767ab);
+      padding: 1rem 2rem;
+      z-index: 10;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li {
+      font-size: 1.2rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #000;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .hamburger.active div:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active div:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Responsive Menu */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #0f0f0f;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1rem 0;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        text-align: center;
+        padding: 1rem 0;
+      }
+    }
+    
+     
+    /* Home Tampilan */
+    .about {
+      padding: 4rem 2rem;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0)),  url(Bg.png);
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .about .content {
+      flex: 1;
+      min-width: 300px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .about .content  {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #faffff;
+    }
+
+    
+    .btn-primary {
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #00f5ff, #32b2ee);
+      color: #fff;
+      border: none;
+      margin: 10px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(255, 0, 200, 0.5);
+    }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    .about .image {
+      flex: 1;
+      min-width: 300px;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    .about .image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+
+    /* Section Styles */
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #00f5ff;
+    }
+
+    .services {
+      background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    }
+
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .service-item {
+      background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+      border-radius: 10px;
+      padding: 2rem;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 255, 200, 0.4);
+    }
+
+/* Pricing Table */
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.pricing-box {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.pricing-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 255, 200, 0.4);
+}
+
+.pricing-box h3 {
+  font-size: 2.4rem;
+  color: #00f5ff;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.pricing-box p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.pricing-box .price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.pricing-box .price-details {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.pricing-box .new-price {
+  font-size: 2.8rem;
+  color: #ff00c8;
+  font-weight: bold;
+}
+
+.pricing-box .old-price {
+  text-decoration: line-through;
+  font-size: 1.4rem;
+  color: #999;
+}
+
+.pricing-box .discount {
+  font-size: 1.1rem;
+  color: #00ff00;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.pricing-box .features {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.pricing-box .features li {
+  margin-bottom: 0.8rem;
+}
+
+.pricing-box .cta-button {
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #00f5ff, #ff00c8);
+  border: none;
+  border-radius: 50px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 1.5rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.pricing-box .cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 245, 255, 0.6);
+}
+
+.pricing-box.popular {
+  background: #0081b4;
+}
+
+.pricing-box .popular-label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  background: #ff7b00;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 90rem;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .pricing-table {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .pricing-box {
+    width: 90%; /* Make boxes take up more space on small screens */
+  }
+}
+
+
+    /* Portfolio Section */
+    .portfolio {
+      background: #0f0f0f;
+    }
+
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .portfolio-item {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .portfolio-item .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .portfolio-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay h3 {
+      color: #00f5ff;
+    }
+
+    /* Contact Section */
+    .contact {
+      background: #1a1a1a;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      background: transparent;
+      color: #fff;
+    }
+
+    form button {
+      padding: 1rem 2rem;
+      background: #00f5ff;
+      border: none;
+      border-radius: 50px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    form button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 245, 255, 0.5);
+    }
+
+    /* Footer */
+    footer {
+      background: #0f0f0f;
+      text-align: center;
+      padding: 1rem;
+      color: #fff;
+    }
+
+    /* warna pangkat */
+    #silver{
+        color:#fff7cc;
+
+    }
+    #gold{
+        color:#fffb00;
+    }
+    #diamond{
+        color: #70d1f4;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="jasa web semarang demak logo.webp" alt="Jasa Pembuatan Web Langking Web Logo" style="width: auto; height: 40px; vertical-align: middle; margin-right: 10px;">
+    </div>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#search-container">Hasil Jepret</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#portfolio">Portofolio</a></li>
+      <li><a href="#about">Tentang Kami</a></li>
+    </ul>
+  </nav>
+
+
+    
+
+<main>
+  <section id="home" class="about">
+    <div class="content">
+      <p style="text-align: left;">
+        <h1>Judul Conten</h1>
+        <p>Keterangan web</p>
+        <a href="https://wa.me/62882005421918" class="btn-primary">Mulai Sekarang</a>   
+    </div>
+    <div class="image">
+      <img src="jasa web semarang demak logo.webp" alt="Jasa Pembuatan website demak semarang">
+    </div>
+  </section>
+</main>
+<!-- Fitur Pencarian
+  <section id="services" class="services">
+    <h2>Layanan Kami</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Website Bisnis</h3>
+        <p>Solusi untuk bisnis profesional yang modern.</p>
+      </div>
+      <div class="service-item">
+        <h3>Toko Online</h3>
+        <p>Jual produk dengan desain toko online canggih.</p>
+      </div>
+      <div class="service-item">
+        <h3>Blog Pribadi</h3>
+        <p>Berbagi cerita Anda dengan dunia.</p>
+      </div>
+    </div>
+  </section>  -->
+
+
+
+  <!-- Fitur Pencarian -->
+   <style>
+     /* Pencarian */
+     #search-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #search-box {
+            padding: 15px;
+            font-size: 16px;
+            width: 60%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            background-color: #ffffff;
+        }
+
+        #search-box:focus {
+            border-color: #6a4e1f;
+            outline: none;
+        }
+
+        /* Notasi Gamelan Section */
+        section#notasi-list {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #1f1f1f;
+        }
+
+        section#notasi-list h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #6a4e1f;
+        }
+
+        section#notasi-list p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .notasi-item {
+            display: inline-block;
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgb(32, 32, 32);
+            border: 2px solid #6a4e1f;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .notasi-item h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .notasi-item .pdf-viewer {
+            width: 100%;
+            height: 800px; /* Height for full-size viewing */
+            border: none;
+            margin-top: 20px;
+        }
+
+        .notasi-item button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #6a4e1f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .notasi-item button:hover {
+            background-color: #ffdb58;
+        }
+   </style>
+<section id="search-container">
+    <input type="text" id="search-box" placeholder="Cari hasil jepretan..." onkeyup="searchNotations()">
+</section>
+
+<!-- Notasi Gamelan List -->
+<section id="notasi-list">
+    <div class="notasi-item" data-name="Suket Mayang">
+        <h3>Contoh 1</h3>
+        <p>Keterangan </p>
+    
+        <!-- Link to PDF for Suket Mayang -->
+         <a href="https://drive.google.com/drive/folders/1-f7AFshtkcuddnf6WOAuE8hNqaeTbo77">
+        <button>Lihat Drive</button>
+        </a>    
+    </div>
+    <div class="notasi-item" data-name="Suket Mayang">
+        <h3>Contoh 2</h3>
+        <p>Keterangan </p>
+    
+        <!-- Link to PDF for Suket Mayang -->
+         <a href="https://drive.google.com/drive/folders/1-f7AFshtkcuddnf6WOAuE8hNqaeTbo77">
+        <button>Lihat Drive</button>
+        </a>    
+    </div>
+    <div class="notasi-item" data-name="Suket Mayang">
+        <h3>Contoh 3</h3>
+        <p>Keterangan </p>
+    
+        <!-- Link to PDF for Suket Mayang -->
+         <a href="https://drive.google.com/drive/folders/1-f7AFshtkcuddnf6WOAuE8hNqaeTbo77">
+        <button>Lihat Drive</button>
+        </a>    
+    </div>
+    
+    
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Notasi Gamelan | Hak Cipta Dilindungi</p>
+</footer>
+
+<script>
+    // Fitur Pencarian
+    function searchNotations() {
+        var input, filter, notasiList, items, item, i, txtValue;
+        input = document.getElementById('search-box');
+        filter = input.value.toLowerCase();
+        notasiList = document.getElementById('notasi-list');
+        items = notasiList.getElementsByClassName('notasi-item');
+        
+        for (i = 0; i < items.length; i++) {
+            item = items[i];
+            txtValue = item.textContent || item.innerText;
+            if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                item.style.display = "";
+            } else {
+                item.style.display = "none";
+            }
+        }
+    }
+</script>
+
+
+  <!-- Tentang Kami 
+  <section id="about" class="about">
+    <div class="content">
+      <h2>Tentang Kami</h2>
+      <p style="text-align: left;">
+        <i>Langking Web</i> menggabungkan kekuatan filosofi budaya Indonesia dengan teknologi digital. Nama Langking, yang berarti "hitam", terinspirasi dari seni wayang, di mana karakter yang semakin gelap dianggap semakin kuat. Kami menciptakan website yang bukan hanya menarik, tetapi juga kuat dan andal, membantu bisnis Anda tampil dengan kekuatan digital yang memukau. Fokus kami adalah desain yang elegan dan solusi yang tepat untuk setiap kebutuhan digital Anda.      </p>
+    </div>
+    <div class="image">
+      <img src="jasa web semarang demak logo.webp" alt="Jasa Pembuatan website demak semarang">
+    </div>
+  </section>
+  -->
+
+
+
+  <footer style="background-color: #1a1a1a; color: #fff; padding: 20px; font-size: 14px;">
+    <div class="footer-container">
+        <!-- Logo Perusahaan -->
+        <div class="footer-section logo">
+            <img src="jasa web semarang demak logo tulisan.webp" alt="Logo Perusahaan" style="width: 200px; height: auto;">
+        </div>
+  
+        <!-- Kontak Perusahaan -->
+        <div class="footer-section kontak">
+            <p><strong>Hubungi Kami</strong></p>
+            <br>
+            <p>Tel: +62 882 0054 21918</p>
+            <p>Email: langking.info@gmail.com</p>
+            <p>Alamat: Ngaluran Rt 01/04, Tegalarum, Kec. Mranggen, Kab. Demak, 59567</p>
+        </div>
+  
+        <!-- Ikon Sosial Media -->
+        <div class="footer-section sosial">
+            <p><strong>Ikuti Kami</strong></p>
+            <br>
+            <div class="social-icons">
+              <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://x.com" target="_blank" aria-label="X"><i class="fas fa-x">X</i></a>
+              <a href="https://www.instagram.com/jasaweblangking/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/langking-web-58441733b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/@LangkingWeb" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.tiktok.com/@langkingweb" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+          
+        </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        &copy; 2024 <strong>Langking Web</strong>. All Rights Reserved.
+    </div>
+  </footer>
+  
+  <!-- Link ke Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  
+  <style>
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+  
+    /* Footer Container */
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+  
+    .footer-section {
+        flex: 1;
+        text-align: center;
+    }
+  
+    .footer-section.kontak {
+        flex: 2; /* Lebih besar untuk bagian kontak */
+        line-height: 20px; /* Jarak antar baris 1.8 kali tinggi font */
+    }
+  
+    /* Sosial Media Ikon */
+    .social-icons a {
+        margin: 0 10px;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+  
+    .social-icons a:hover {
+        color: #00f5ff; /* Warna hover */
+    }
+  
+    /* Footer Bottom */
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+  
+    /* Responsif */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column; /* Stack sections vertically */
+            align-items: center;
+        }
+  
+        .footer-section {
+            flex: unset; /* Reset ukuran flex */
+        }
+    }
+  
+    @media (max-width: 480px) {
+        .social-icons a {
+            font-size: 18px; /* Kecilkan ikon sosial media */
+        }
+  
+        .footer-bottom {
+            font-size: 10px; /* Sesuaikan ukuran teks copyright */
+        }
+    }
+  </style>
+  
+<!-- Tambahkan link ke Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <script>
+    // JavaScript for Hamburger Menu
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('#nav-menu li a');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu after clicking a link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+  <script>// tampilan awal
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+</script>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+  
+  
+</body>
+</html>
